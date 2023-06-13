@@ -43,6 +43,7 @@ class GPTService():
             if args.APIKey:
                 logging.info('you have your own api key. Great.')
                 api_key = args.APIKey
+                os.environ['API_URL'] = "https://api.tudouss.top/v1/chat/completions"
             else:
                 logging.info('using custom API proxy, with rate limit.')
                 os.environ['API_URL'] = "https://api.geekerwan.net/chatgpt2"

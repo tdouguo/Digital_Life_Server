@@ -1,0 +1,8 @@
+*.pyc
+venv/
+TTS/models/
+tmp/
+SentimentEngine/models/
+ASR/resources/models/
+.idea/
+*.log
